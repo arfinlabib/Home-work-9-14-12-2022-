@@ -1,0 +1,363 @@
+/* common css start  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.contaner{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ 
+
+/* common css end  */
+/* navigation css section start */
+nav{
+    background:#02918c;
+}
+nav ul li a{
+    text-transform: uppercase;
+    color: #ffff;
+    padding: 26px 25px;
+    display: block;
+    font-weight: 800;
+    transition: .6s;
+    font-size: 12px;
+    transform: scale(1);
+}
+nav ul li a:hover{
+    color: black;
+    background: #cfc91d;
+    /* border-radius: 40%; */
+    transform: scale(1.2);
+    font-size: 12px;
+    padding: 30px;
+    
+}
+.logo{
+    width: 15%;
+}
+.menu{
+    width: 70%;
+}
+nav ul{
+    justify-content: flex-end;
+    
+}
+nav .row{
+    align-items: center;
+}
+/* navigation css section end */
+/* bannar css section start */
+#bannar{
+    background-image: url(../img/MYFOLIO\ Bannar.png);
+    height: 780px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#bannar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+#bannar .contaner{
+    margin: auto;
+}
+#bannar h3{
+    color: #ffff;
+    font-size: 30px;
+    
+}
+#bannar h1{
+    color: #ffff;
+    font-size: 68px;
+    letter-spacing: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+#bannar p{
+    color: #ffff;
+    font-size: 18px;
+}
+#bannar  a{
+    color: black;
+    background: #cfc91d;
+    padding: 20px 45px;
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: .4s;
+    font-size: 16px;
+    transform: scale(1);
+    
+}
+#bannar a:hover{
+    background:#02918c;
+    color: #ffff;
+    /* border-radius: 50%; */
+    font-size: 16px;
+    transform: scale(1.5);
+
+}
+#bannar img{
+    display: block;
+    margin: auto;
+    padding: 52px;
+}
+/* bannar css section end */
+/* about me css section start */
+#about{
+    text-align: center;
+}
+#about .about_item{
+    width: 25%;
+    padding: 36px 67px ;
+    border-right: 1px solid #aeb1b4 ;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+#about .about_item:nth-child(4){
+    border-right: none;
+}
+#about .about_item h4{
+    font-size: 14px;
+    font-weight: 800;
+    color: #aeb1b4;
+    padding: 15px;
+
+}
+#about .about_item p{
+    font-size: 11;
+    color: #ccced0;
+    width: 160px;
+    margin: auto;
+
+}
+#about .section_info h2 {
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    padding-top: 100px;
+}
+
+#about .section_info p {
+    width: 875px;
+    margin: auto;
+    color: #7b7c7d;
+    font-size: 16px;
+    padding: 20px;
+
+}
+
+
+#about .section_info p b{
+    color: #8d9195;
+    font-size: 18px;
+    
+}
+
+/* about css section end */
+/* services css section start */
+#services{
+    background-image:url(../img/MYFOLIO\ services_bg.jpg) ;
+    background-size: cover;
+
+} 
+#services .sub_contaner{
+    width: 50%;
+}
+#services .section_info h2{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    padding-top: 100px;
+    text-transform: uppercase;
+
+}
+#services .section_info p{
+    width: 470px;
+    color: #7b7c7d;
+    font-size: 16px;
+    padding-top: 21px;
+    
+}
+#services .about_item{
+    width: 50%;
+    text-align: left;
+    padding-top: px;
+}
+#services .about_item h4{
+    color: #7b7c7d;
+    font-weight: 800;
+    font-size: 16px;
+    
+}
+#services .about_item p{
+    color: #8d9195;
+    font-size: 14px;
+    width: 160px;
+    padding-top:10px;
+    padding-bottom: 27px;
+    margin-bottom: 45px;
+}
+#services .about_item img{
+    padding-top: 30px;
+    
+}
+/* services css section end */
+/* my work css section end */
+#my_work .section_info{
+    text-align: center;
+}
+#my_work .section_info h2{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+#my_work .section_info p{
+    color: #8d9195;
+    font-size: 16px;
+    width: 672px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+#my_work .my_work_item{
+    width: 25%;
+    position: relative;
+ 
+}
+#my_work  .my_work_item  img{
+    width: 100%;
+    display: block;
+}
+#my_work .my_work_item .overly{
+    position: absolute;
+    top: 57px;
+    left: 26px;
+    background: rgba(2, 145, 140,0.85);
+    right: 26px;
+    bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    padding-top: 40px;
+    transition: .6s;
+    transform: scale(0);
+    border-radius: 50%;
+}
+#my_work .my_work_item:hover .overly{
+    transform: scale(1);
+
+    border-radius: 0%;
+}
+
+#my_work .my_work_item .overly h4{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+#my_work .my_work_item .overly p{
+    color: #ffff;
+    font-size: 14px;
+    width: 188px;
+    margin: auto;
+}
+/* my work css section end */
+/* contact css section start */
+#contact .section_info h2 {
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    padding-top: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#contact .section_info p {
+    color: #8d9195;
+    font-size: 16px;
+    text-align: center;
+    width: 678px;
+    margin: auto;
+   
+}
+#contact .contact_form{
+    background: #0b0b0b;
+    margin-top: 74px;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+    display: block;
+    margin: auto;
+    background: none;
+    padding: 18px;
+    color: #949597;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #242424;
+    /* text-transform: lowercase; */
+    font-size: 16px;
+    text-align: center;
+    width: 642px;
+    /* margin-top: 80px; */
+
+}
+#contact .contact_form input::placeholder,
+#contact .contact_form textarea::placeholder{
+    text-transform: uppercase;
+}
+#contact .contact_form input.lg,
+#contact .contact_form textarea.lg{
+   width: 935px;
+   resize: none;
+   font-family: 'Open Sans', sans-serif;
+}
+#contact .contact_form button{
+    color: #0b0b0b;
+    background: #cfc91d;
+    padding: 17px 70px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    font-weight: 800;
+
+}
+/* contact css section end */
+/*fotter css section start */
+#fotter{
+    background: #000;
+}
+#fotter .contaner img{
+    display: block;
+    margin: auto;
+    padding: 35px;
+}
+/* fotter css section end */
